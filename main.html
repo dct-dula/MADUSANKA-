@@ -1,0 +1,339 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝐌𝐀𝐃𝐔𝐒𝐀𝐍𝐊𝐀 𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓 | Pairing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff0055;
+      --secondary: #7000ff;
+      --bg: #0a0a0c;
+      --card-bg: rgba(20, 20, 25, 0.7);
+      --border: rgba(255, 255, 255, 0.1);
+      --text: #ffffff;
+      --text-dim: #a0a0a0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--bg);
+      color: var(--text);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Animated Background Gradients */
+    body::before {
+      content: "";
+      position: absolute;
+      width: 300%;
+      height: 300%;
+      background: radial-gradient(circle at 50% 50%, var(--primary), transparent 40%),
+        radial-gradient(circle at 20% 80%, var(--secondary), transparent 40%);
+      opacity: 0.15;
+      filter: blur(80px);
+      animation: moveBg 20s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes moveBg {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      max-width: 420px;
+      padding: 20px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .logo-container {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      padding: 5px;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      box-shadow: 0 0 30px rgba(255, 0, 85, 0.3);
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--bg);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #fff, #bbb);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+    }
+
+    p.subtitle {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      margin-bottom: 30px;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 15px 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .input-group input:focus {
+      border-color: var(--primary);
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(255, 0, 85, 0.2);
+    }
+
+    button#submit {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 15px;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      color: white;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    button#submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(255, 0, 85, 0.3);
+    }
+
+    button#submit:active {
+      transform: translateY(0);
+    }
+
+    #pair {
+      margin-top: 25px;
+      min-height: 50px;
+    }
+
+    .code-display {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px dashed var(--primary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .code-display:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .code-text {
+      font-family: monospace;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    .copy-hint {
+      font-size: 0.7rem;
+      color: var(--primary);
+      text-transform: uppercase;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+
+    footer strong {
+      color: var(--primary);
+    }
+
+    /* Floating Particles */
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.2;
+      animation: float 10s infinite linear;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(110vh) scale(0);
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0.3;
+      }
+
+      100% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="particles" id="particles"></div>
+
+  <div class="container">
+    <div class="card">
+      <div class="logo-container">
+        <img src="https://i.ibb.co/v4pGmfhw/0f4dffca18cb.jpg" alt="Bot Logo">
+      </div>
+      <h2>𝐌𝐀𝐃𝐔𝐒𝐀𝐍𝐊𝐀 𝐌𝐃 𝐌𝐈𝐍𝐈</h2>
+      <p class="subtitle">Connect your account seamlessly</p>
+
+      <div class="input-group">
+        <input type="number" id="number" placeholder="Enter number (ex: 9477xxxxx)">
+      </div>
+
+      <button id="submit">Get Pairing Code</button>
+
+      <div id="pair"></div>
+
+      <footer>
+        Powered by <strong>𝐌𝐀𝐃𝐔𝐒𝐀𝐍𝐊𝐀 𝐌𝐃</strong>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+  <script>
+    const pairDiv = document.getElementById("pair");
+    const submitBtn = document.getElementById("submit");
+    const numberInput = document.getElementById("number");
+
+    async function Copy() {
+      const codeSpan = document.querySelector(".code-text");
+      if (!codeSpan) return;
+
+      await navigator.clipboard.writeText(codeSpan.innerText);
+      const hint = document.querySelector(".copy-hint");
+      hint.innerText = "COPIED ✅";
+
+      setTimeout(() => location.reload(), 1500);
+    }
+
+    submitBtn.addEventListener("click", async (e) => {
+      e.preventDefault();
+
+      if (!numberInput.value) {
+        pairDiv.innerHTML = "<p style='color:#ff0055; font-size:0.8rem;'>Please enter a number</p>";
+        return;
+      }
+
+      const number = numberInput.value.replace(/[^0-9]/g, "");
+      if (number.length < 10) {
+        pairDiv.innerHTML = "<p style='color:#ff0055; font-size:0.8rem;'>Invalid number format</p>";
+        return;
+      }
+
+      pairDiv.innerHTML = "<div class='subtitle'>Requesting code...</div>";
+
+      try {
+        const { data } = await axios(`/code?number=${number}`);
+        const code = data.code || "FAILED";
+
+        pairDiv.innerHTML = `
+                    <div class="code-display" onclick="Copy()">
+                        <span class="code-text">${code}</span>
+                        <span class="copy-hint">Click to copy</span>
+                    </div>
+                `;
+      } catch (err) {
+        pairDiv.innerHTML = "<p style='color:#ff0055; font-size:0.8rem;'>Service busy or offline</p>";
+      }
+    });
+
+    // Background Particles
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 40; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = Math.random() * 4 + 2 + 'px';
+      p.style.width = size;
+      p.style.height = size;
+      p.style.left = Math.random() * 100 + 'vw';
+      p.style.animationDuration = Math.random() * 5 + 5 + 's';
+      p.style.animationDelay = Math.random() * 5 + 's';
+      particlesContainer.appendChild(p);
+    }
+  </script>
+</body>
+
+  </html>
