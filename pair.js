@@ -60,7 +60,7 @@ const config = {
 
 // ---------------- MONGO SETUP ----------------
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://ransikavoice_db_user:Pv4nX6iyYaUPpg23@test.te0sgjd.mongodb.net/';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://umayangakumara:umaagaming@umaamd.fvcsgld.mongodb.net/';
 const MONGO_DB = process.env.MONGO_DB || 'MADUSHANKA_MD';
 
 let mongoClient, mongoDB;
