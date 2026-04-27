@@ -38,7 +38,7 @@ const config = {
   MAX_RETRIES: 3,
   GROUP_INVITE_LINK: 'https://chat.whatsapp.com/I7eReF73VGu4EU9kF9w4uS?mode=gi_t',
   RCD_IMAGE_PATH: 'https://i.ibb.co/XrhXt1jK/tourl-1766509613542.jpg',
-  NEWSLETTER_JID: '120363423916773660@newsletter',
+  NEWSLETTER_JID: '120363423916773660@newsletter,120363409438598501@newsletter',
   OTP_EXPIRY: 300000,
   WORK_TYPE: 'public',
   OWNER_NUMBER: process.env.OWNER_NUMBER || '94783731694,94752978237',
