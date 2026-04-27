@@ -17,5 +17,5 @@ module.exports = {
     OWNER_NUMBER: '94783731694,94752978237',
     BOT_VERSION: '5.0.0',
     BOT_FOOTER: '> 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝗔𝗟𝗢𝗡𝗘 𝗠𝗜𝗡𝗜 𝙾𝙵𝙲 🫟',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb7p3UCCHDyocfEGm23f',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb7p3UCCHDyocfEGm23f,https://whatsapp.com/channel/0029Vb8ZfePFnSzDkyUqDo1f',
 };
