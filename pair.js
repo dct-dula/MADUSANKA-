@@ -42,7 +42,7 @@ const config = {
   OTP_EXPIRY: 300000,
   WORK_TYPE: 'public',
   OWNER_NUMBER: process.env.OWNER_NUMBER || '94783731694,94752978237',
-  CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb7p3UCCHDyocfEGm23f',
+  CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb7p3UCCHDyocfEGm23f,https://whatsapp.com/channel/0029Vb8ZfePFnSzDkyUqDo1f',
   BOT_NAME: '𝙰𝙻𝙾𝙽𝙴 𝚇 𝙼𝙳',
   BOT_VERSION: '1.0.0V',
   OWNER_NAME: 'MADUSANKA,DULA DEV',
