@@ -37,7 +37,7 @@ const config = {
   PREFIX: '.',
   MAX_RETRIES: 3,
   GROUP_INVITE_LINK: 'https://chat.whatsapp.com/I7eReF73VGu4EU9kF9w4uS?mode=gi_t',
-  RCD_IMAGE_PATH: 'https://i.ibb.co/XrhXt1jK/tourl-1766509613542.jpg',
+  RCD_IMAGE_PATH: 'https://i.ibb.co/v5hZr6B/imgbb-1777319484731.jpg',
   NEWSLETTER_JID: '120363423916773660@newsletter,120363409438598501@newsletter',
   OTP_EXPIRY: 300000,
   WORK_TYPE: 'public',
@@ -48,7 +48,7 @@ const config = {
   OWNER_NAME: 'MADUSANKA,DULA DEV',
   IMAGE_PATH: 'https://files.catbox.moe/l74kdf.jpg',
   BOT_FOOTER: '> 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚀𝙻𝙾𝙽𝙴 𝚇 𝙼𝙳 𝙾𝙵𝙲 ',
-  BUTTON_IMAGES: { ALIVE: 'https://i.ibb.co/XrhXt1jK/tourl-1766509613542.jpg' }
+  BUTTON_IMAGES: { ALIVE: 'https://i.ibb.co/v5hZr6B/imgbb-1777319484731.jpg' }
 };
 
 // ---------------- MONGO SETUP ----------------
